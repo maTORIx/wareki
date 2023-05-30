@@ -76,6 +76,10 @@ h1 {
     gap: 10px;
 }
 
+.contents .year:hover {
+    background-color: #ccc;
+}
+
 .contents .year .japanese {
     text-align: right;
 }
