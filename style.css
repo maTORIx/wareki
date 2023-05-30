@@ -1,0 +1,90 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=BIZ+UDPGothic&family=Roboto+Mono:ital@1&family=Zen+Antique+Soft&display=swap');
+
+body {
+    font-family: 'BIZ UDPGothic', serif;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    height: 100dvh;
+}
+
+h1 {
+    font-family: "Zen Antique Soft", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    padding: 1rem 0px;
+    border: 1px solid #555;
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: 1fr 180px 1fr;
+    gap: 10px;
+    width: min(600px, calc(100vw - 1rem));
+    height: 13rem;
+    margin: 0 auto;
+    box-sizing: content-box;
+    overflow-y: scroll;
+}
+
+.contents::-webkit-scrollbar {
+    width: 8px;
+    height: 16px;
+    background: none;
+    border: none;
+}
+
+.contents::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.contents .left-header {
+    text-align: left;
+}
+
+.contents .left-header p {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    font-size: 1.2rem;
+}
+
+.right-header p {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    font-size: 1.2rem;
+}
+
+.right-header {
+    border-bottom: 1px solid #555;
+}
+
+.contents .year {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contents .year .japanese {
+    text-align: right;
+}
+
+.contents .year.now {
+    background-color: black;
+    color: white;
+}
+
+small {
+    font-size: 0.7rem;
+}
